@@ -1,0 +1,16 @@
+html, body, #root {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.app {
+    height: 100%;
+    width: 100%;
+}
+
+.renderer {
+    height: 100%;
+    width: 100%;
+    caret-color: white;
+}

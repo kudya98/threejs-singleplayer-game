@@ -1,0 +1,74 @@
+.hud {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    max-width: 800px;
+    margin:auto;
+    height: 150px;
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid black;
+}
+
+.hud * {
+    user-select: none;
+}
+
+.energybar, .healthbar, .weaponbar {
+    width: 100%;
+    display: flex;
+}
+.energybar {
+    height: 20px;
+}
+.healthbar {
+    height: 40px;
+}
+.energybar > .missing, .healthbar > .missing {
+    background-color: black;
+    flex-grow: 1;
+}
+.energybar > .available {
+    background-color: orange;
+}
+.healthbar > .available {
+    background-color: red;
+}
+.weaponbar, .optionsbar {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 90px;
+}
+.weaponbar > span {
+    margin: auto;
+    font-size: 40px;
+}
+.sound-slider {
+    -webkit-appearance: none;
+    width: 30%;
+    height: 30px;
+    background: #939393;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.sound-slider:hover {
+    opacity: 1;
+}
+.sound-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #111;
+    cursor: pointer;
+}
+.sound-icon {
+    height: 30px;
+}
